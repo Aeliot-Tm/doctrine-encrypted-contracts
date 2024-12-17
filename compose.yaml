@@ -1,0 +1,7 @@
+services:
+    php-cli:
+        build:
+            context: ./
+            dockerfile: .docker/php/Dockerfile
+        volumes:
+            - .:/app

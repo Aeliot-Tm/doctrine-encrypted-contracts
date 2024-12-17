@@ -3,3 +3,5 @@
 
 # Ignore
 .idea
+/vendor/
+compose.override.yaml
