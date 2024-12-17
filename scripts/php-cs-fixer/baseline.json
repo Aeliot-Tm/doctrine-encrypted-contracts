@@ -1,0 +1,21 @@
+{
+    "config_hash": 4153760570,
+    "relative": true,
+    "hashes": {
+        "scripts\/composer-unused\/config.php": {
+            "hash": 197963343
+        },
+        "scripts\/php-cs-fixer\/config.php": {
+            "hash": 3582947072
+        },
+        "scripts\/php-cs-fixer\/finder.php": {
+            "hash": 2423659081
+        },
+        "src\/ColumnDefaultLengthProviderInterface.php": {
+            "hash": 2897013293
+        },
+        "src\/CryptographicSQLFunctionNameProviderInterface.php": {
+            "hash": 3996046130
+        }
+    }
+}
