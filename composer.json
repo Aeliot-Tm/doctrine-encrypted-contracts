@@ -33,7 +33,9 @@
     "scripts": {
         "check-all": [
             "@cs-fixer-check",
-            "@phpcs"
+            "@phpcs",
+            "@require-check",
+            "@unused"
         ],
         "cs-baseline": "@cs-fixer-baseline",
         "cs-check": "@cs-fixer-check",
