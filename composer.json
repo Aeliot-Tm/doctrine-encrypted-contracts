@@ -25,5 +25,26 @@
     "require": {
         "php": "^7.1|^8.0",
         "doctrine/dbal": "^3.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "2.0.x-dev",
+        "squizlabs/php_codesniffer": "4.0.x-dev"
+    },
+    "scripts": {
+        "check-all": [
+            "@cs-fixer-check",
+            "@phpcs"
+        ],
+        "cs-baseline": "@cs-fixer-baseline",
+        "cs-check": "@cs-fixer-check",
+        "cs-fix": "@cs-fixer-fix",
+        "cs-fixer-baseline": "XDEBUG_MODE=off tools/pcsf-baseline.phar -b scripts/php-cs-fixer/baseline.json -c scripts/php-cs-fixer/config.php -f scripts/php-cs-fixer/finder.php",
+        "cs-fixer-check": "@cs-fixer-fix --dry-run",
+        "cs-fixer-fix": "tools/php-cs-fixer.phar fix -vv --config=scripts/php-cs-fixer/config.php",
+        "phive-install": "phive install --trust-gpg-keys $(cat .phive/trust-gpg-keys.txt)",
+        "phpcs": "vendor/bin/phpcs --standard=PSR12 src",
+        "phpcbf": "vendor/bin/phpcbf --standard=PSR12 src",
+        "require-check": "tools/composer-require-checker check --config-file=scripts/composer-require-checker/config.json composer.json --output=text",
+        "unused": "XDEBUG_MODE=off tools/composer-unused.phar unused -c ./scripts/composer-unused/config.php"
     }
 }
