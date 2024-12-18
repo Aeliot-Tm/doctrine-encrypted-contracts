@@ -22,6 +22,7 @@ jobs:
         with:
           php-version: 8.2
           tools: composer
+          coverage: none
 
       - uses: actions/checkout@v4
 
@@ -37,6 +38,7 @@ jobs:
         with:
           php-version: 8.2
           tools: composer
+          coverage: none
 
       - uses: actions/checkout@v4
 
@@ -83,6 +85,7 @@ jobs:
         with:
           php-version: 8.2
           tools: composer
+          coverage: none
 
       - uses: actions/checkout@v4
 
@@ -129,6 +132,7 @@ jobs:
         with:
           php-version: 8.2
           tools: composer
+          coverage: none
 
       - uses: actions/checkout@v4
 
@@ -176,6 +180,7 @@ jobs:
         with:
           php-version: 8.2
           tools: composer
+          coverage: none
 
       - uses: actions/checkout@v4
 
