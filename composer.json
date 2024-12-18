@@ -2,7 +2,12 @@
     "name": "aeliot/doctrine-encrypted-contracts",
     "type": "library",
     "description": "Generic abstractions related to writing extension for Doctrine with encrypted column types",
-    "keywords": ["doctrine", "database", "encryption"],
+    "keywords": [
+        "cryptographic",
+        "encryption",
+        "database",
+        "doctrine"
+    ],
     "license": "MIT",
     "authors": [
         {
