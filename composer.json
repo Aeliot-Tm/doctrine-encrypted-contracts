@@ -3,10 +3,15 @@
     "type": "library",
     "description": "Generic abstractions related to writing extension for Doctrine with encrypted column types",
     "keywords": [
-        "cryptographic",
+        "cryptography",
         "encryption",
+        "decryption",
+        "doctrine-encrypted",
+        "doctrine",
+        "php",
         "database",
-        "doctrine"
+        "sql-routine",
+        "sql-function"
     ],
     "license": "MIT",
     "authors": [
@@ -53,5 +58,8 @@
         "phpcbf": "vendor/bin/phpcbf --standard=PSR12 src",
         "require-check": "tools/composer-require-checker check --config-file=scripts/composer-require-checker/config.json composer.json --output=text",
         "unused": "XDEBUG_MODE=off tools/composer-unused.phar unused -c ./scripts/composer-unused/config.php"
+    }, 
+    "suggest": {
+        "aeliot/doctrine-encrypted-bundle": "Provides functionality of this abstraction"
     }
 }
