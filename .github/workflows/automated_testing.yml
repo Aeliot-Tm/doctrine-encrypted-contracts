@@ -18,13 +18,8 @@ jobs:
           - lock-version: 3.9
 
     steps:
-      - uses: shivammathur/setup-php@v2
-        with:
-          php-version: 8.2
-          tools: composer
-          coverage: none
-
       - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup-php
 
       - name: Validate composer.json and composer.lock
         run: composer validate --strict
@@ -34,13 +29,8 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-      - uses: shivammathur/setup-php@v2
-        with:
-          php-version: 8.2
-          tools: composer
-          coverage: none
-
       - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup-php
 
       - name: Cache Composer packages
         id: composer-cache
@@ -81,13 +71,8 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-      - uses: shivammathur/setup-php@v2
-        with:
-          php-version: 8.2
-          tools: composer
-          coverage: none
-
       - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup-php
 
       - name: Cache Composer packages
         id: composer-cache
@@ -128,13 +113,8 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-      - uses: shivammathur/setup-php@v2
-        with:
-          php-version: 8.2
-          tools: composer
-          coverage: none
-
       - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup-php
 
       - name: Cache Composer packages
         id: composer-cache
@@ -176,13 +156,8 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-      - uses: shivammathur/setup-php@v2
-        with:
-          php-version: 8.2
-          tools: composer
-          coverage: none
-
       - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup-php
 
       - name: Cache Composer packages
         id: composer-cache
