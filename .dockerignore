@@ -1,1 +1,4 @@
-.docker
+.docker/*
+!.docker/php/
+.docker/php/*
+!.docker/php/conf.d/
